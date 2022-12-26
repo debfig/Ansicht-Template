@@ -5,18 +5,10 @@ import "./index.less"
 import Home from "./Components/Home/Home.js"
 
 const An = new Ans({
-  el: 'body',
+  el: '#App',
   data,
   NodeTree(an) {
-    return {
-      el: 'div',
-      attr: {
-        id: 'app'
-      },
-      sonNode: [
-        Home(an),
-      ]
-    }
+    return Home(an)
   },
   method: {
 
