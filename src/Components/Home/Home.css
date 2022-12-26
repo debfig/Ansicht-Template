@@ -1,0 +1,14 @@
+#home {
+  margin: 0;
+}
+#home p {
+  text-align: center;
+  font-size: 25px;
+  color: aliceblue;
+}
+#home img {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 120px auto 0;
+}
