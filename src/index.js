@@ -1,18 +1,15 @@
-import Ans from "Ansicht"
+import Ans from "ansicht"
 import data from "./data.js"
-import "./index.less"
 
-import Home from "./Components/Home/Home.js"
+import Root from "./Components/Root"
 
 const An = new Ans({
   el: '#App',
   data,
   NodeTree(an) {
-    return Home(an)
+    return Root(an)
   },
-  method: {
-
-  },
+  method: {},
   life: {
     mountrear() {
       console.log(this);
