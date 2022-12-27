@@ -4,7 +4,7 @@ import data from "./data.js"
 import Root from "./Components/Root"
 
 const An = new Ans({
-  el: '#App',
+  el: document.querySelector('#App'),
   data,
   NodeTree(an) {
     return Root(an)
@@ -13,6 +13,7 @@ const An = new Ans({
   life: {
     mountrear() {
       console.log(this);
+      window.An = this
     }
   }
 })
