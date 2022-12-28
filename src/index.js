@@ -4,7 +4,7 @@ import data from "./data.js"
 import Root from "./Components/Root"
 
 const An = new Ans({
-  el: document.querySelector('#App'),
+  el: '#App',
   data,
   NodeTree(an) {
     return Root(an)
